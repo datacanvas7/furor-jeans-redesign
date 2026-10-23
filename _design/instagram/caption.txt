@@ -1,0 +1,25 @@
+FUROR, rebuilt.
+
+A premium storefront concept for the Karachi denim label — SIGNAL: paper, ink, and one signal red. Campaign images carry the emotion; the type stays precise.
+
+Nine phases (0–8): audit, art direction, campaign hero, design system, homepage, collection and product pages, search and cart, QA, launch prep.
+
+250 real products. 17/17 rendered QA suites. Zero invented data. Concept prototype — not yet live.
+
+Full case study on GitHub — link in bio.
+
+#FUROR #denim #denimstyle #webdesign #ecommerce #designsystem #casestudy #typography #pakistanifashion #streetwear
+
+---
+
+ALT TEXT
+
+Slide 1: FUROR, rebuilt — concept redesign cover with a model wearing a green FUROR logo tee.
+Slide 2: SIGNAL design system — paper, ink, and signal red palette; Archivo Black, Inter, and Space Mono typefaces.
+Slide 3: Nine phases — 250 real products, 17/17 QA suites, 6 widths tested, 0 console errors; homepage screenshot and GitHub case study.
+
+POST NOTES
+
+- Order: slide-1 → slide-2 → slide-3. All 1080×1350 (4:5), the largest Instagram carousel format.
+- Update the bio link to https://github.com/datacanvas7/furor-jeans-redesign before posting.
+- The post is explicit that this is a concept prototype, not the live store — keep that line in the caption.
