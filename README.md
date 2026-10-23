@@ -2,7 +2,9 @@
 
 An art-directed concept redesign for [FUROR](https://furorjeans.com/), a Karachi denim label (est. 2017): a complete, working static storefront prototype with zero frameworks, zero build steps, and zero dependencies.
 
-**This is a design concept, not the live store.** It is not deployed, and it is not affiliated with the production site's Shopify setup.
+**Live prototype:** [furor-jeans-redesign.vercel.app](https://furor-jeans-redesign.vercel.app)
+
+**This is a design concept, not the live store.** It is hosted as a standalone prototype on Vercel and is not affiliated with the production site's Shopify setup.
 
 ![FUROR homepage concept](_audit/shots/index-1440.png)
 
@@ -53,6 +55,14 @@ Evidence lives in `_audit/shots/` (screenshots + `report.txt`). The suite is rep
 
 Open `site/index.html` directly, or double-click `PREVIEW.cmd`. The prototype is entirely file:// safe — no server required.
 
+## Deploy
+
+Static site, no build step:
+
+```
+vercel deploy site --prod
+```
+
 ## Project docs
 
 - `_audit/PHASE-0-AUDIT.md` — evidence-based audit of the live site
@@ -71,4 +81,4 @@ _tools/         QA + capture scripts (local Node/gh binaries are gitignored)
 
 ## Scope
 
-Built as a static front-end concept. Shopify integration points — checkout, BaadMay, restock notifications, newsletter — are labeled as pending, never simulated. Product imagery and data belong to FUROR; this repository documents a design concept only.
+Built as a static front-end concept and hosted as a standalone Vercel deployment. Shopify integration points — checkout, BaadMay, restock notifications, newsletter — are labeled as pending, never simulated. Product imagery and data belong to FUROR; this repository documents a design concept only.

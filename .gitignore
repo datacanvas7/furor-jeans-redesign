@@ -9,3 +9,5 @@ _tmp-hires/
 # OS noise
 Thumbs.db
 .DS_Store
+auth.log
+vercel-login.log

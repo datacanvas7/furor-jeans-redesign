@@ -4,9 +4,10 @@ A premium storefront concept for the Karachi denim label — SIGNAL: paper, ink,
 
 Nine phases (0–8): audit, art direction, campaign hero, design system, homepage, collection and product pages, search and cart, QA, launch prep.
 
-250 real products. 17/17 rendered QA suites. Zero invented data. Concept prototype — not yet live.
+250 real products. 17/17 rendered QA suites. Zero invented data. A live concept prototype — not the production store.
 
-Full case study on GitHub — link in bio.
+Live prototype — link in bio
+Full case study — github.com/datacanvas7/furor-jeans-redesign
 
 #FUROR #denim #denimstyle #webdesign #ecommerce #designsystem #casestudy #typography #pakistanifashion #streetwear
 
@@ -21,5 +22,5 @@ Slide 3: Nine phases — 250 real products, 17/17 QA suites, 6 widths tested, 0 
 POST NOTES
 
 - Order: slide-1 → slide-2 → slide-3. All 1080×1350 (4:5), the largest Instagram carousel format.
-- Update the bio link to https://github.com/datacanvas7/furor-jeans-redesign before posting.
-- The post is explicit that this is a concept prototype, not the live store — keep that line in the caption.
+- Set the bio link to https://furor-jeans-redesign.vercel.app before posting.
+- The post is explicit that this is a concept prototype, not the production store — keep that line in the caption.
