@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QA harness — FUROR prototype</title>
+  <style>
+    body { font: 13px/1.5 monospace; background: #111; color: #eee; padding: 16px; }
+    iframe { display: block; border: 2px solid #444; margin: 8px 0; }
+    .pass { color: #7ec97e; } .fail { color: #e57373; font-weight: bold; }
+    h2 { margin: 16px 0 4px; }
+  </style>
+</head>
+<body>
+  <h1>QA harness</h1>
+  <div id="frames"></div>
+  <pre id="report">RUNNING…</pre>
+<script>
+(function () {
+  'use strict';
+  var PAGES = [
+    ['index.html', 'index'],
+    ['collection.html?type=Men%20Denim%20Jeans', 'collection-type'],
+    ['collection.html?view=sale', 'collection-sale'],
+    ['collection.html?view=proportions', 'collection-proportions'],
+    ['collection.html?cat=Woman', 'collection-women'],
+    ['product.html?handle=loose-fit-jeans-fmbp6-040', 'pdp'],
+    ['product.html?handle=does-not-exist', 'pdp-fallback'],
+    ['search.html?q=polo', 'search'],
+    ['search.html?q=zzzz', 'search-empty']
+  ];
+  var WIDTHS = [1440, 1280, 1024, 768, 390, 320];
+  var results = [];
+  var host = document.getElementById('frames');
+
+  function checkFrame(page, label, w) {
+    return new Promise(function (resolve) {
+      var f = document.createElement('iframe');
+      f.style.width = w + 'px';
+      f.style.height = '900px';
+      f.src = page;
+      host.appendChild(f);
+      f.addEventListener('load', function () {
+        setTimeout(function () { resolve(runChecks(f, page, label, w)); }, 700);
+      });
+      setTimeout(function () { resolve({ page: page, label: label, width: w, fatal: 'iframe never loaded' }); }, 8000);
+    });
+  }
+
+  function runChecks(f, page, label, w) {
+    var d = f.contentDocument, wn = f.contentWindow;
+    var r = { page: page, label: label, width: w, issues: [] };
+    function issue(msg) { r.issues.push(msg); }
+    if (!d || !d.body) { r.fatal = 'no document'; return r; }
+    try {
+      var el = d.documentElement;
+      var overflowX = el.scrollWidth - wn.innerWidth;
+      if (overflowX > 1) issue('horizontal overflow ' + overflowX + 'px (scrollWidth ' + el.scrollWidth + ' vs inner ' + wn.innerWidth + ')');
+
+      var h1s = d.querySelectorAll('h1');
+      if (label === 'index' && h1s.length !== 1) issue('expected 1 visible h1, found ' + h1s.length);
+      if (label === 'index') {
+        var visH1 = Array.prototype.filter.call(h1s, function (h) { return h.offsetParent !== null; });
+        if (visH1.length !== 1) issue('visible h1 count ' + visH1.length + ' (desktop+mobile copies?)');
+      }
+
+      Array.prototype.forEach.call(d.images, function (img) {
+        if (!img.hasAttribute('alt')) issue('img missing alt: ' + (img.getAttribute('src') || '').split('/').pop());
+        if (img.complete && img.naturalWidth === 0) issue('broken image: ' + img.getAttribute('src'));
+      });
+
+      var main = d.querySelector('main');
+      if (!main) issue('no <main> landmark');
+      var header = d.querySelector('header'), footer = d.querySelector('footer');
+      if (!header) issue('no <header>');
+      if (label !== 'qa' && !footer) issue('no <footer>');
+      if (header && !header.querySelector('nav')) issue('header has no nav');
+
+      Array.prototype.forEach.call(d.querySelectorAll('a[href="#"]'), function () { issue('dead href="#" link'); });
+      Array.prototype.forEach.call(d.querySelectorAll('button'), function (b) {
+        if (!b.textContent.trim() && !b.getAttribute('aria-label')) issue('unlabeled button');
+      });
+
+      if (label === 'collection-type' || label === 'collection-sale') {
+        var cards = d.querySelectorAll('.card');
+        if (w >= 1024 && cards.length < 4) issue('too few cards rendered: ' + cards.length);
+        if (w >= 1024 && !d.querySelector('[data-facets] .facet-group')) issue('facets not rendered');
+      }
+      if (label === 'pdp') {
+        if (!d.querySelector('.gallery-main img')) issue('PDP gallery missing');
+        if (!d.querySelector('[data-sizes] .opt-chip')) issue('PDP size chips missing');
+        var dis = d.querySelectorAll('[data-sizes] .opt-chip[aria-disabled="true"]').length;
+        if (dis < 1) issue('PDP sold-out size states missing (expect some aria-disabled)');
+        if (!d.querySelector('.acc-item')) issue('PDP accordions missing');
+        if (!d.querySelector('[data-related] .card')) issue('PDP related rail empty');
+      }
+      if (label === 'search') {
+        if (!d.querySelector('[data-grid] .card')) issue('search results empty for "polo"');
+      }
+      if (label === 'search-empty') {
+        var es = d.querySelector('[data-empty]');
+        if (!es || es.hidden) issue('empty state not shown for zero results');
+      }
+
+      var consoleErrors = (f.__errs || []).length;
+      if (consoleErrors) issue(consoleErrors + ' page console errors');
+    } catch (e) {
+      r.fatal = 'check exception: ' + e.message;
+    }
+    return r;
+  }
+
+  var chain = Promise.resolve();
+  PAGES.forEach(function (pg) {
+    WIDTHS.forEach(function (w) {
+      if ((w === 1440 || w === 390 || w === 320) || pg[1].indexOf('collection-type') === 0 || pg[1] === 'pdp') {
+        chain = chain.then(function () { return checkFrame(pg[0], pg[1], w).then(function (r) { results.push(r); }); });
+      }
+    });
+  });
+  chain.then(function () {
+    var fails = results.filter(function (r) { return r.fatal || r.issues.length; });
+    var lines = results.map(function (r) {
+      var head = (r.fatal || r.issues.length ? 'FAIL ' : 'pass ') + r.label + ' @' + r.width;
+      var det = r.fatal ? ['  FATAL ' + r.fatal] : r.issues.map(function (i) { return '  - ' + i; });
+      return [head].concat(det).join('\n');
+    });
+    var summary = 'PAGES ' + results.length + ' · PASS ' + (results.length - fails.length) + ' · FAIL ' + fails.length;
+    document.getElementById('report').textContent = summary + '\n\n' + lines.join('\n');
+    document.title = 'QA ' + (fails.length ? 'FAIL(' + fails.length + ')' : 'PASS');
+  });
+})();
+</script>
+</body>
+</html>

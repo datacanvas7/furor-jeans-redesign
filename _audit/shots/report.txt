@@ -1,0 +1,18 @@
+SUITES 17 · PASS 17 · FAIL 0 · console errors total 0
+pass index @1440
+pass index @768
+pass index @390
+pass collection-denim @1440
+pass collection-denim @390
+pass collection-sale @1440
+pass collection-proportions @1440
+pass collection-proportions @390
+pass collection-women @1440
+pass collection-women @390
+pass collection-footwear @1440
+pass collection-footwear @390
+pass pdp @1440
+pass pdp @390
+pass search @1440
+pass search-empty @1440
+pass search-empty @390

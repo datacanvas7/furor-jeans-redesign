@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search — FUROR Prototype</title>
+  <meta name="description" content="Search the FUROR catalog in the redesign prototype.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F4F0E9">
+  <link rel="icon" type="image/png" href="assets/campaign/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <p class="announce"><strong>Season End Sale</strong> — up to 60% off · In stores &amp; online</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="icon-btn nav-toggle" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+      <a class="brand" href="index.html" aria-label="FUROR home">
+        <img src="assets/campaign/logo.png" alt="FUROR" width="132" height="34">
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="collection.html?view=new">New In</a>
+        <a href="collection.html?cat=Men">Men</a>
+        <a href="collection.html?cat=Woman">Women</a>
+        <a href="collection.html?types=Men%20Shoes%2CMen%20Slides">Footwear</a>
+        <a href="collection.html?types=Men%20Caps%2CBags">Accessories</a>
+        <a class="sale-link" href="collection.html?view=sale">Sale</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search-form" action="search.html" role="search">
+          <input type="search" name="q" placeholder="Search products" aria-label="Search products" autocomplete="off">
+          <div class="predictive" role="listbox" aria-label="Search suggestions"></div>
+        </form>
+        <a class="icon-btn acct-btn" href="https://furorjeans.com/account" target="_blank" rel="noopener" aria-label="Account (opens the live store)">
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6.5" r="3.2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 17c1.2-3.2 3.7-4.8 6.5-4.8s5.3 1.6 6.5 4.8" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <button class="icon-btn bag-btn" aria-label="Open shopping bag">
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M4 6.5h12l-.9 10H4.9L4 6.5z" stroke="currentColor" stroke-width="1.5"/><path d="M7 8V5a3 3 0 016 0v3" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="bag-count" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="search-head">
+      <p class="eyebrow">Search the catalog</p>
+      <h1>Results for <span class="q" data-q></span></h1>
+      <p class="count" data-count></p>
+      <form class="search-big" action="search.html" role="search">
+        <label class="sr-only" for="search-input">Search products</label>
+        <input id="search-input" type="search" name="q" autocomplete="off">
+        <button class="btn btn-ink" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="product-grid" data-grid style="padding-block:var(--space-6) var(--space-9)"></div>
+    <div class="empty-state" data-empty hidden>
+      <h3>No matches</h3>
+      <p>Nothing in the current data export matches that search. Try “jeans”, “polo”, “joggers” or “slides” — or search the full 2,750+ product catalog on the live store.</p>
+      <a class="btn btn-ink" href="https://furorjeans.com/search" target="_blank" rel="noopener">Search the live store</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:0">
+        <p>© 2026 FUROR. Prototype for design review — not the production store.</p>
+        <p class="mono"><a href="index.html" style="text-decoration:underline">Home</a> · SIGNAL concept</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="mobile-menu-src" hidden>
+    <form class="mm-search" action="search.html" role="search">
+      <label class="sr-only" for="mm-q-search">Search products</label>
+      <input id="mm-q-search" type="search" name="q" placeholder="Search products" aria-label="Search products">
+    </form>
+    <a class="mm-link" href="collection.html?view=new">New In</a>
+    <a class="mm-link" href="collection.html?cat=Men">Men</a>
+    <a class="mm-link" href="collection.html?cat=Woman">Women</a>
+    <a class="mm-link" href="collection.html?types=Men%20Shoes%2CMen%20Slides">Footwear</a>
+    <a class="mm-link" href="collection.html?types=Men%20Caps%2CBags">Accessories</a>
+    <a class="mm-link mm-sale" href="collection.html?view=sale">Sale</a>
+    <a class="mm-link" href="https://furorjeans.com/account" target="_blank" rel="noopener">Account (live store)</a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,765 @@
+A phased, art-directed, premium fashion e-commerce build
+
+Website: https://furorjeans.com/
+
+Creative ambition: A custom-designed, $10,000-quality digital flagship for FUROR.
+
+Process: Research → Art Direction → Hero → Design System → Homepage → Commerce → Refinement → Launch.
+
+Non-negotiable rule: Do not build the entire website in one shot. Work in distinct phases. Complete the current phase, show the result, validate it, and wait for my approval before beginning the next phase.
+
+01. YOUR ROLE
+
+You are not an AI website generator.
+
+You are a senior creative team consisting of:
+
+A world-class fashion art director.
+A principal product designer with Apple-level attention to detail.
+A senior editorial designer.
+A conversion-focused e-commerce UX specialist.
+A senior frontend engineer.
+A responsive design and accessibility specialist.
+A meticulous visual quality assurance engineer.
+
+Your task is to redesign FUROR's existing website into a distinctive, contemporary fashion experience that feels deliberately designed by experienced humans.
+
+Approach this project like a boutique digital agency commissioned to create a premium flagship storefront.
+
+Do not rush to produce pages.
+
+First understand the brand. Then establish the art direction. Then design the most important screen. Then build the system. Then extend that system to the rest of the website.
+
+Think carefully before implementing anything.
+
+Your operating principles
+Inspect before designing.
+Research before inventing.
+Art-direct before coding.
+Establish visual hierarchy before adding decoration.
+Build one approved phase at a time.
+Test actual implementations, not just screenshots.
+Reuse design decisions consistently without making every section identical.
+Preserve real commerce functionality.
+Challenge generic design decisions instead of automatically accepting them.
+Never confuse visual complexity with design quality.
+02. THE ANTI-AI-SLOP MANIFESTO
+
+This section takes precedence over generic instructions to make the website modern, beautiful, premium, or visually impressive.
+
+The objective is not to make the website look like something an AI would describe as premium.
+
+The objective is to create a credible, distinctive fashion brand experience with clear creative intent.
+
+Absolutely avoid these patterns
+Generic AI hero sections
+
+Do not automatically create:
+
+An enormous centered headline.
+A perfectly centered image.
+Two pill-shaped buttons.
+A gradient overlay.
+Floating glass panels.
+Decorative circles.
+Random abstract shapes.
+Unnecessary glowing effects.
+A hero that looks like a SaaS landing page.
+
+The hero must be designed around the actual campaign photograph, model placement, negative space, clothing, lighting, and brand identity.
+
+The image composition determines the typography placement—not the other way around.
+
+Generic component styling
+
+Do not give every section:
+
+A rounded rectangular background.
+A white floating card.
+A large section heading.
+Three identical columns.
+A repeated icon-and-description pattern.
+An unnecessary shadow.
+A decorative badge.
+
+Fashion e-commerce needs a different visual language from SaaS dashboards and startup landing pages.
+
+Use photography, composition, typography, spacing, and contrast to create hierarchy.
+
+Artificial luxury
+
+Do not attempt to make the site premium by adding:
+
+Excessive whitespace without a purpose.
+Random serif fonts.
+Gold accents.
+Unnecessary thin borders.
+Overly muted colors that conflict with the brand.
+Slow animations everywhere.
+Huge empty sections.
+Fake exclusivity or luxury claims.
+
+Premium design comes from excellent decisions, not an arbitrary collection of luxury clichés.
+
+Generic AI copywriting
+
+Avoid phrases such as:
+
+“Elevate your everyday.”
+“Where style meets innovation.”
+“Redefine your wardrobe.”
+“Discover the art of expression.”
+“Crafted for the modern individual.”
+
+Do not use marketing filler simply because it sounds polished.
+
+Use the actual voice of FUROR. Keep copy concise, specific, confident, and credible. If the brand's tone is not clear, research it before writing.
+
+Fake functionality
+
+Never create decorative controls that do nothing.
+
+Do not simulate:
+
+Product filters.
+Shopping carts.
+Size selection.
+Search results.
+Checkout.
+Newsletter submissions.
+Product availability.
+Customer reviews.
+
+Every implemented control must work or be explicitly identified as pending integration.
+
+Unnecessary motion
+
+Do not animate every section into view.
+
+Avoid:
+
+Excessive parallax.
+Scroll hijacking.
+Long intro animations.
+Artificial cursor effects.
+Continuous background movement.
+Bouncy transitions.
+Animation that delays navigation or shopping.
+
+Motion should provide feedback or enhance a specific piece of storytelling. If removing an animation improves the experience, remove it.
+
+The quality test
+
+For every significant design decision, ask:
+
+Would an experienced fashion art director genuinely make this decision?
+Is it specific to FUROR, or could it belong to 500 other websites?
+Does it improve the experience or merely make the screenshot look impressive?
+Is the visual treatment supported by the actual photography?
+Does it work at real mobile dimensions?
+Would it still look good without animation?
+Does it help the customer discover or purchase products?
+
+If the decision feels generic, do not implement it.
+
+03. CREATIVE DIRECTION
+
+The creative direction must be based on the existing FUROR brand, its products, its audience, and its available visual assets.
+
+Do not begin with a predetermined template.
+
+Research the current website and develop a visual direction that belongs to FUROR.
+
+The intended qualities are:
+
+Contemporary.
+Confident.
+Youthful.
+Fashion-led.
+Editorial.
+Urban where appropriate to the brand.
+Commercially effective.
+Visually disciplined.
+Technically polished.
+
+Apple's design philosophy is a reference for clarity, precision, restraint, and interaction quality—not a requirement to make FUROR resemble Apple's website.
+
+The result must retain FUROR's own personality.
+
+Photography-led design
+
+Photography should be one of the primary structural elements of the website.
+
+Inspect the actual available images before choosing layouts.
+
+Determine:
+
+Which images are suitable for the hero.
+Which images have useful negative space.
+Which images work best in portrait compositions.
+Which images can support full-bleed layouts.
+Which images belong to the same campaign.
+Which product images have inconsistent backgrounds or ratios.
+Which mobile image crops require separate assets.
+
+Never select a layout first and force an unsuitable photograph into it.
+
+Do not use unrelated stock photographs when genuine brand assets are available.
+
+If appropriate campaign assets are unavailable, identify the gap and use approved temporary assets only when necessary. Do not pretend those assets are official FUROR photography.
+
+04. PHASED WORKFLOW AND APPROVAL GATES
+
+You must follow the phases below in order.
+
+Never execute all phases in a single response or implementation pass.
+
+Do not silently skip a phase.
+
+Do not start the next phase merely because you have finished writing about the current one.
+
+Each phase has a defined deliverable and an approval gate.
+
+After completing a phase:
+
+Explain briefly what you completed.
+Show the actual result wherever the environment supports it.
+List any unresolved issues.
+State what the next phase will cover.
+Stop and wait for my approval.
+
+If I request changes, revise the current phase. Do not proceed until I approve it.
+
+If a tool or development environment supports live previews, use them. If it does not, provide the most useful verifiable alternative. Never claim that a page has been implemented or tested when it has not.
+
+PHASE 0 — WEBSITE AND PROJECT AUDIT
+
+Do not write implementation code in this phase unless inspection requires a minimal diagnostic action.
+
+Inspect the live FUROR website and, if a codebase is available, inspect the actual project.
+
+Review:
+
+Homepage.
+Header and navigation.
+Hero and promotional banners.
+Product listings.
+Product detail pages.
+Category structure.
+Search and filtering.
+Shopping cart.
+Mobile experience.
+Typography.
+Brand colors.
+Product imagery.
+Existing promotional language.
+Footer and customer support.
+Commerce platform.
+Existing routes and integrations.
+
+Identify what already works and what should be preserved.
+
+Do not assume the existing website is bad simply because it needs a redesign.
+
+Separate the audit into:
+
+Brand strengths.
+Visual weaknesses.
+UX and conversion problems.
+Mobile-specific issues.
+Technical constraints.
+Existing assets worth preserving.
+Opportunities for meaningful differentiation.
+
+Provide a concise audit and a prioritized list of changes.
+
+Do not create the homepage yet.
+
+Deliverable: An evidence-based redesign brief.
+
+Approval gate: Wait for my approval before proceeding to Phase 1.
+
+PHASE 1 — ART DIRECTION AND VISUAL RESEARCH
+
+Develop the visual concept before writing the website.
+
+Use the findings from Phase 0 to propose a coherent art direction.
+
+Define:
+
+Brand personality.
+Photography direction.
+Typography direction.
+Color palette.
+Layout principles.
+Image ratios.
+Navigation character.
+Product-grid treatment.
+Interaction principles.
+Mobile art direction.
+What the design should deliberately avoid.
+
+Study relevant contemporary fashion e-commerce references if research tools are available. Analyze their design principles rather than copying their pages.
+
+Do not choose references solely because they are popular or visually fashionable.
+
+Explain why each reference is relevant to FUROR.
+
+Create two genuinely distinct art-direction concepts if doing so would help make a meaningful choice. They should differ in composition, typography, imagery, and overall visual character—not merely background color.
+
+Recommend one direction and explain why it is the strongest fit.
+
+Do not build the complete website.
+
+Deliverable: An art-direction proposal, reference analysis, and recommended creative concept.
+
+Approval gate: Wait for my approval of the creative direction.
+
+PHASE 2 — RESPONSIVE HERO DESIGN
+
+This is the first implementation phase.
+
+Build only the hero and the minimum header required to evaluate it in context.
+
+Do not build the remaining homepage sections yet.
+
+Design the hero around the actual assets
+
+Evaluate the available campaign images and choose the strongest suitable option.
+
+Make the composition intentional.
+
+Determine:
+
+Model position.
+Image focal point.
+Negative space.
+Text alignment.
+Headline width.
+CTA position.
+Navigation contrast.
+Desktop and mobile image crops.
+Hero height.
+Relationship between the announcement bar, header, and hero.
+
+Do not force the headline into the center by default.
+
+Do not choose an arbitrary full-screen height just to create drama.
+
+Do not put text over important product details.
+
+Desktop
+
+Design for large desktop and laptop viewports.
+
+Use the composition that best supports the image. Depending on the actual assets, this might be:
+
+Full-bleed photography with left-aligned editorial typography.
+A carefully balanced asymmetric composition.
+A split editorial layout.
+A campaign image with minimal overlaid navigation and text.
+
+Choose one approach based on the assets and visual concept.
+
+Mobile
+
+Create a distinct mobile composition where necessary.
+
+Consider portrait imagery, text placement, CTA reachability, navigation height, and the visible amount of content below the fold.
+
+The hero must feel intentionally designed at mobile widths rather than mechanically reduced from desktop.
+
+Motion
+
+Start with a static, polished composition.
+
+Add only the minimum motion necessary after the layout works without it.
+
+Validation
+
+Inspect the actual rendered hero at:
+
+1440px.
+1280px.
+1024px.
+768px.
+390px.
+320px.
+
+Check cropping, typography, text contrast, header behavior, overflow, and button placement.
+
+Deliverable: A working responsive hero and its supporting header, with a brief explanation of the visual decisions.
+
+Approval gate: Wait for my approval before building the full design system or additional homepage sections.
+
+PHASE 3 — DESIGN SYSTEM
+
+Once the hero is approved, establish the reusable design system based on its actual visual language.
+
+Do not introduce a separate aesthetic that conflicts with the hero.
+
+Define:
+
+Color tokens.
+Typography tokens.
+Spacing scale.
+Responsive breakpoints.
+Content widths.
+Grid rules.
+Button variants.
+Link treatments.
+Form controls.
+Image ratios.
+Product-card conventions.
+Border and radius rules.
+Focus states.
+Motion durations.
+Reduced-motion behavior.
+
+Create reusable components only where they provide real consistency or functionality.
+
+Avoid overengineering a simple storefront with dozens of unnecessary abstractions.
+
+The system must accommodate editorial sections and product grids without forcing them into identical layouts.
+
+Validate the system on a small set of representative components before applying it to every page.
+
+Deliverable: A documented, implemented design system consistent with the approved hero.
+
+Approval gate: Wait for my approval before proceeding to the homepage.
+
+PHASE 4 — HOMEPAGE, BUILT SECTION BY SECTION
+
+Build the homepage in individual, reviewable increments.
+
+Do not generate every section at once.
+
+Use this sequence, adjusting the exact content based on the Phase 0 audit.
+
+Phase 4A — Header and navigation
+
+Finalize the desktop navigation, mobile menu, search access, account access where supported, and shopping bag.
+
+Verify the interaction states, keyboard access, and contrast.
+
+Wait for approval.
+
+Phase 4B — Featured categories
+
+Design category navigation using genuine FUROR categories and available campaign assets.
+
+Focus on image selection, composition, spacing, and straightforward navigation.
+
+Do not automatically use a standard grid of five rounded cards.
+
+Wait for approval.
+
+Phase 4C — Product merchandising
+
+Implement the New Arrivals or most relevant featured-product section.
+
+Use real product information, accurate pricing, consistent imagery, and functioning product links.
+
+Perfect one representative product card before extending the pattern across the collection.
+
+Wait for approval.
+
+Phase 4D — Editorial campaign
+
+Introduce a distinctive visual composition that creates a change of pace from the product grid.
+
+Use real campaign assets and restrained, brand-appropriate copy.
+
+Do not add a full-width banner simply because a homepage template usually contains one.
+
+Wait for approval.
+
+Phase 4E — Additional collections and merchandising
+
+Build the remaining relevant product-discovery sections.
+
+Include only sections that contribute to the brand story or help users shop.
+
+Avoid repetition and unnecessary page length.
+
+Wait for approval.
+
+Phase 4F — Brand story, service information, and footer
+
+Use verified brand information and genuine service policies.
+
+Ensure that the supporting content is useful and visually consistent.
+
+Wait for approval.
+
+Homepage final review
+
+Once the sections are individually approved, inspect the full page as one composition.
+
+Check the overall visual rhythm, image repetition, section transitions, content density, navigation, and mobile experience.
+
+Revise any section that feels disconnected from the whole.
+
+Deliverable: A cohesive, functional homepage composed of individually reviewed sections.
+
+Approval gate: Wait for my approval before starting the commerce templates.
+
+PHASE 5 — PRODUCT AND COLLECTION PAGES
+
+Implement one representative collection page first.
+
+Validate the layout and interaction patterns before applying them to the remaining collections.
+
+Include:
+
+Collection introduction.
+Product count where available.
+Product grid.
+Sorting.
+Real filters.
+Active-filter indicators.
+Clear-filter action.
+Pagination or load-more behavior.
+Responsive filter controls.
+Loading and empty states.
+
+Then implement one representative product detail page.
+
+Include:
+
+Product gallery.
+Product name and price.
+Size and color selectors where applicable.
+Size guide where available.
+Inventory-aware purchase controls.
+Product information.
+Materials and care where available.
+Delivery and returns information.
+Related products where supported.
+Appropriate mobile purchase behavior.
+
+Do not invent product information.
+
+Test actual variant selection, unavailable sizes, unavailable products, and invalid purchase attempts.
+
+Once the templates are validated, apply them to the rest of the catalog through reusable components and existing commerce data.
+
+Deliverable: Working collection and product templates integrated with the actual catalog.
+
+Approval gate: Wait for my approval before implementing or refining the cart and remaining commerce flows.
+
+PHASE 6 — SEARCH, CART, AND CHECKOUT
+
+Implement or refine:
+
+Product search.
+Search suggestions where supported.
+Search results.
+Product filtering.
+Cart drawer or cart page.
+Quantity adjustments.
+Remove-item action.
+Variant and price display.
+Cart totals.
+Empty cart.
+Error states.
+Checkout handoff.
+
+Preserve the existing commerce platform and checkout integration.
+
+Do not replace real checkout functionality with a frontend-only simulation.
+
+Test the actual user journey from product discovery to checkout handoff.
+
+If an external service or credential is unavailable, identify the blocker and implement only what can genuinely be completed.
+
+Deliverable: A verified shopping journey within the available integration environment.
+
+Approval gate: Wait for my approval before final refinement and launch preparation.
+
+PHASE 7 — RESPONSIVE, ACCESSIBILITY, AND VISUAL QA
+
+Treat this as a dedicated engineering and design phase.
+
+Do not simply generate a checklist and claim everything passes.
+
+Actually inspect the implementation and fix the problems you find.
+
+Test:
+
+Small mobile.
+Standard mobile.
+Large mobile.
+Tablet.
+Laptop.
+Large desktop.
+
+Check:
+
+Hero image crops.
+Typography wrapping.
+Header and menu behavior.
+Product grid density.
+Filter drawer.
+Product image gallery.
+Cart interactions.
+Footer layout.
+Horizontal overflow.
+Keyboard navigation.
+Focus visibility.
+Contrast.
+Form labels.
+Reduced motion.
+Loading states.
+Empty states.
+Error states.
+Console errors.
+Broken links.
+
+Use automated accessibility and performance tools when available.
+
+Aim for WCAG 2.2 AA and good Core Web Vitals, but report measured results rather than assuming compliance.
+
+Deliverable: A tested, refined implementation and a concise list of verified results and outstanding issues.
+
+Approval gate: Wait for my approval before launch preparation.
+
+PHASE 8 — SEO, PERFORMANCE, AND LAUNCH PREPARATION
+
+Prepare the website for production.
+
+Review:
+
+Metadata.
+Canonical URLs.
+Structured data where appropriate.
+Image optimization.
+Responsive image delivery.
+Asset loading.
+Route behavior.
+Redirects where necessary.
+Analytics integrations.
+Privacy and consent requirements.
+Environment variables.
+Build process.
+Commerce integration.
+Production errors.
+
+Preserve existing URLs wherever practical.
+
+Do not deploy to production or modify live business-critical systems without explicit authorization.
+
+Provide a launch checklist and identify anything that requires access or credentials.
+
+Deliverable: A production-ready implementation, subject to any explicitly documented external dependencies.
+
+05. IMPLEMENTATION RULES
+
+These rules apply throughout every phase.
+
+Rule 1 — Respect the existing project
+
+If a codebase exists, inspect it before making architectural decisions.
+
+Preserve the framework, useful components, working integrations, and project conventions wherever appropriate.
+
+Do not rewrite the entire application simply because a different stack is fashionable.
+
+Rule 2 — Use real assets and data
+
+Prefer the official FUROR assets and actual commerce data.
+
+Do not invent image URLs, product records, prices, stock levels, policy terms, or integrations.
+
+If an asset is missing, explain what is missing and propose the most appropriate replacement.
+
+Rule 3 — Avoid unnecessary dependencies
+
+Use the smallest practical toolset that supports the approved design.
+
+Do not install a large animation library for a simple transition.
+
+Do not create elaborate component abstractions before the design system has been validated.
+
+Rule 4 — Do not compromise responsive quality
+
+Every major component must be evaluated at realistic mobile and desktop dimensions.
+
+Responsive design is part of the design itself, not a final CSS patch.
+
+Rule 5 — Build working interactions
+
+Buttons, links, menus, filters, forms, and cart controls must perform their advertised actions.
+
+Where backend integration is unavailable, label the limitation clearly.
+
+Rule 6 — No premature polishing
+
+Do not spend time on sophisticated animation before the composition, typography, imagery, and spacing are correct.
+
+Get the fundamentals right first.
+
+Rule 7 — Do not continue without approval
+
+The approval gate is mandatory.
+
+If I request changes, modify the current phase only.
+
+If I approve a phase, proceed to the next phase.
+
+Do not interpret silence as permission to build the rest of the website.
+
+06. HOW TO HANDLE DESIGN DECISIONS
+
+Do not ask me to make every small design decision.
+
+Act like a senior designer: make informed recommendations based on the audit, explain important trade-offs, and use professional judgment for routine details.
+
+Ask me a question only when the answer materially affects the brand direction, a major layout decision, or a business-critical implementation choice.
+
+When multiple solutions are possible:
+
+Evaluate them against the approved creative direction.
+Choose the strongest option.
+Explain the reason briefly.
+Present alternatives only when the decision genuinely deserves review.
+
+Avoid long design essays after every phase. Show the actual work and explain the important decisions.
+
+07. DEFINITION OF DONE
+
+A phase is not complete simply because code has been generated.
+
+It is complete when:
+
+The phase's specified deliverable exists.
+The implementation matches the approved direction.
+Relevant interactions work.
+Responsive behavior has been checked.
+Known problems are documented.
+No major visual inconsistency remains within that phase.
+The result is ready for review.
+
+The overall redesign is complete only when the major pages, interactions, commerce integration, responsive behavior, and launch requirements have been implemented or explicitly documented as blocked.
+
+Never claim an integration, test, or deployment succeeded unless it was actually verified.
+
+08. START NOW — PHASE 0 ONLY
+
+Begin with Phase 0: audit the current FUROR website and inspect the available project, if one has been provided.
+
+Do not build the homepage.
+
+Do not create the hero.
+
+Do not generate a full website preview.
+
+Do not skip ahead to the design system.
+
+First understand what exists, what works, what needs to change, and what visual assets are available.
+
+Present the audit findings, the most important design opportunities, and a proposed priority order.
+
+Then stop and wait for my approval.
+
+The goal is not to generate a website as quickly as possible. The goal is to make a series of excellent design and engineering decisions until the finished website feels unmistakably intentional, authentic, and premium.

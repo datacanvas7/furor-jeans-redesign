@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product — FUROR Prototype</title>
+  <meta name="description" content="FUROR product detail — redesign prototype with real catalog data.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F4F0E9">
+  <link rel="icon" type="image/png" href="assets/campaign/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <p class="announce"><strong>Season End Sale</strong> — up to 60% off · In stores &amp; online</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="icon-btn nav-toggle" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+      <a class="brand" href="index.html" aria-label="FUROR home">
+        <img src="assets/campaign/logo.png" alt="FUROR" width="132" height="34">
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="collection.html?view=new">New In</a>
+        <div class="nav-item">
+          <button class="nav-trigger" aria-expanded="false" aria-haspopup="true">Men
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="menu-panel">
+            <h3>Men</h3>
+            <ul>
+              <li><a href="collection.html?type=Men%20Denim%20Jeans">Denim Jeans</a></li>
+              <li><a href="collection.html?type=Men%20Shirts">Shirts</a></li>
+              <li><a href="collection.html?type=Men%20Polo%20Shirts">Polo Shirts</a></li>
+              <li><a href="collection.html?type=Men%20Jogger%20Pants">Jogger Pants</a></li>
+              <li><a href="collection.html?type=Men%20Graphic%20Tees">Graphic Tees</a></li>
+              <li><a href="collection.html?type=Men%20Shoes">Shoes</a></li>
+              <li><a href="collection.html?cat=Men"><strong>Shop all men</strong></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-trigger" aria-expanded="false" aria-haspopup="true">Women
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="menu-panel">
+            <h3>Women</h3>
+            <ul>
+              <li><a href="collection.html?type=Woman%20Tank%20Tops">Tank Tops</a></li>
+              <li><a href="https://furorjeans.com/collections/women" target="_blank" rel="noopener">Full women&rsquo;s range on the live store</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="collection.html?types=Men%20Shoes%2CMen%20Slides">Footwear</a>
+        <a href="collection.html?types=Men%20Caps%2CBags">Accessories</a>
+        <a class="sale-link" href="collection.html?view=sale">Sale</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search-form" action="search.html" role="search">
+          <input type="search" name="q" placeholder="Search products" aria-label="Search products" autocomplete="off">
+          <div class="predictive" role="listbox" aria-label="Search suggestions"></div>
+        </form>
+        <a class="icon-btn acct-btn" href="https://furorjeans.com/account" target="_blank" rel="noopener" aria-label="Account (opens the live store)">
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6.5" r="3.2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 17c1.2-3.2 3.7-4.8 6.5-4.8s5.3 1.6 6.5 4.8" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <button class="icon-btn bag-btn" aria-label="Open shopping bag">
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M4 6.5h12l-.9 10H4.9L4 6.5z" stroke="currentColor" stroke-width="1.5"/><path d="M7 8V5a3 3 0 016 0v3" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="bag-count" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" data-pdp>
+    <nav class="crumbs" aria-label="Breadcrumb" data-crumbs>
+      <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Product</span>
+    </nav>
+    <div class="pdp">
+      <div data-gallery></div>
+      <div class="pdp-info" data-info></div>
+    </div>
+    <section class="related section" aria-labelledby="related-title" style="padding-bottom:0">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Complete the look</p>
+          <h2 class="section-title" id="related-title">You may also like</h2>
+        </div>
+      </div>
+      <div class="product-grid" data-related></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="margin-top:var(--space-9)">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:0">
+        <p>© 2026 FUROR. Prototype for design review — not the production store.</p>
+        <p class="mono"><a href="index.html" style="text-decoration:underline">Home</a> · SIGNAL concept</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="mobile-menu-src" hidden>
+    <form class="mm-search" action="search.html" role="search">
+      <label class="sr-only" for="mm-q-product.html">Search products</label>
+      <input id="mm-q-product.html" type="search" name="q" placeholder="Search products" aria-label="Search products">
+    </form>
+    <button class="acc-trigger" aria-expanded="false">New In
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+    <div class="acc-panel" style="display:none">
+      <a href="collection.html?view=new">Shop new in</a>
+      <a href="collection.html?view=proportions">Proportions capsule</a>
+    </div>
+    <button class="acc-trigger" aria-expanded="false">Men
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+    <div class="acc-panel" style="display:none">
+      <a href="collection.html?type=Men%20Denim%20Jeans">Denim Jeans</a>
+      <a href="collection.html?type=Men%20Shirts">Shirts</a>
+      <a href="collection.html?type=Men%20Polo%20Shirts">Polo Shirts</a>
+      <a href="collection.html?type=Men%20Jogger%20Pants">Jogger Pants</a>
+      <a href="collection.html?type=Men%20Graphic%20Tees">Graphic Tees</a>
+      <a href="collection.html?type=Men%20Shoes">Shoes</a>
+      <a href="collection.html?cat=Men"><strong>Shop all men</strong></a>
+    </div>
+    <button class="acc-trigger" aria-expanded="false">Women
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+    <div class="acc-panel" style="display:none">
+      <a href="collection.html?type=Woman%20Tank%20Tops">Tank Tops</a>
+      <a href="https://furorjeans.com/collections/women" target="_blank" rel="noopener">Full range on the live store</a>
+    </div>
+    <a class="mm-link" href="collection.html?types=Men%20Shoes%2CMen%20Slides">Footwear</a>
+    <a class="mm-link" href="collection.html?types=Men%20Caps%2CBags">Accessories</a>
+    <a class="mm-link mm-sale" href="collection.html?view=sale">Sale</a>
+    <a class="mm-link" href="https://furorjeans.com/account" target="_blank" rel="noopener">Account (live store)</a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

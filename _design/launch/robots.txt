@@ -1,0 +1,18 @@
+# robots.txt — PRODUCTION DRAFT for furorjeans.com (launch-prep artifact).
+# The redesign prototype itself is intentionally NOT indexed: every prototype page
+# carries <meta name="robots" content="noindex"> and this file is not served by it.
+# Deploy this file at https://furorjeans.com/robots.txt at launch, alongside sitemap.xml.
+
+User-agent: *
+Allow: /
+Disallow: /cart
+Disallow: /account
+Disallow: /checkout
+Disallow: /search
+Disallow: /*?sort_by=
+Disallow: /*?view=
+
+# Crawl budget: keep bots off faceted permutations of collections
+Disallow: /collections/*?*
+
+Sitemap: https://furorjeans.com/sitemap.xml
